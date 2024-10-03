@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Tip Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class=wrapper>
+    
+        <div class="billInfo-1">
+            <div class="billInput">
+                    <label for="billAmount">Bill Amount</label>
+                    <input id="billAmount" type="number">
+            </div>
+            <div class="tipsInfo">
+                <div class="selectTip">
+                    <label>Select Tip</label>
+                </div>
+                    <div class="selectButton">
+                        <button class="tipBtn tip30" data-tip-value="30">30%</button>
+                        <button class="tipBtn tip20" data-tip-value="20">20%</button>
+                        <button class="tipBtn tip15" data-tip-value="15">15%</button>
+                        <button class="tipBtn tip10" data-tip-value="10" >10%</button>
+                        <button class="tipBtn tip0" data-tip-value="0">0%</button>
+                    </div>
+            </div>
+            <div class="peopleNumber">
+                <label for="numberOfPeople">Number of people</label>
+                    <input id="numberOfPeople" type="number">
+            </div>
+        </div>
+        <div class="resultSection-2">
+            <div class="result">
+            <div class="resultLabel">
+                <p>Tip Amount<br><span>/ person</span></p>
+            </div>
+            <div class="resultValue">
+                <p id="resultValueTip">00.00 ₹</p>
+            </div>
+        </div>
+        <div class="result">
+            <div class="resultLabel">
+                <p>Total<br><span>/ person</span></p>
+            </div>
+            <div class="resultValue">
+                <p id="resultValueTotal">00.00 ₹</p>
+            </div>
+        </div>
+        <button class="resetBtn">Reset</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
